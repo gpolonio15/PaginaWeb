@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='error_proveedor.css') }}">
+</head>
+<body>
+    <div class="card-body">
+    <h1 class="centrado"><b>Usted no ha rellenado debidamente todos los datos necesarios</b></h1>
+        <form action="/volver_registro">
+            <input class="boton_1" name="registro" type="submit" value="Resgistro del Producto">
+        </form>
+    </div>
+
+</body>
+</html>

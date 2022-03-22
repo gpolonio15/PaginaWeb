@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proveedor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='proveedor.css') }}">
+</head>
+<body>
+    <div class="row">
+        <div class="card">
+            <div class="card-header">
+                <form action="/comprador" method="POST">
+                    <h1 class="centrado"><b><i>Información proveedor</i></b></h1>
+                    <div class="form-group">
+                        <input class="controls" name="nombreEmpresa" type="text" placeholder="Nombre de la empresa">
+                        <input class="controls" name="telefono" type="number" placeholder="Número telefono">
+                        <input class="controls" name="direccion" type="text" placeholder="Dirección">
+                        <input class="controls" name="cif" type="number" placeholder="CIF">
+                        <input class="controls" name="email" type="text" placeholder="E-mail">
+                        <input class="controls" name="precio" type="number" placeholder="Precio del producto">
+                        <input class="controls" name="descuento" type="number" placeholder="Porcentaje de descuento">
+                        <input class="controls" name="marca" type="text" placeholder="Marca">
+                        <input class="controls" name="color" type="text" placeholder="Color">
+                        <input class="controls" name="descripcion" type="text" placeholder="Descripción">
+                        <input class="controls" name="cantidad" type="text" placeholder="Cantidad">
+                        <input class="controls" name="referencia" type="text" placeholder="Referencia">
+                        <input class="botons" name="proveedor" type="submit" value="Registrar">
+                        <h1 class="controls"><b>LA EMPRESA SE LLEVARÁ UN 5% POR VENTA</b></h1>
+                    </div>
+                </form>
+                <form action="/anadir_producto">
+                    <h1 class="venta"><b>Si el producto ya esta registrado pulse debajo:</b></h1>
+                    <input class="boton_registro" name="registrado" type="submit" value="Producto ya registrado">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>

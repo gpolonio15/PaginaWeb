@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contraseña Incorrecta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Contraseña.css') }}">
+</head>
+<body>
+  <div class="card-body">
+    <h1 class="centrado"><b>Usuario o contraseña incorrecto</b></h1>
+        <form action="/volver_login">
+            <input class="boton_1" name="registro" type="submit" value="Login">
+        </form>
+    </div>
+
+
+</body>
+</html>

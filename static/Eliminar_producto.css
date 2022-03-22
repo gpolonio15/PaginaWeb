@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-image: url('https://www.internetmatters.org/connecting-safely-online/wp-content/uploads/sites/2/2020/06/CYP-passwords-usernames.png'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.form-group {
+  width: 400px;
+  background: white;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: withe;
+  box-shadow: none;
+}
+.controls {
+  width: 100%;
+  background: white;
+  padding: 3.5px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: black;
+}
+.botons {
+  width: 100%;
+  background: black;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.centrado {
+    text-align:center;
+    color: blue;
+
+}
+img{
+display:block;
+margin:auto;
+}

@@ -1,0 +1,59 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-image: url('https://blog.hubspot.es/hubfs/Descarga%20de%20fondos%20para%20pa%CC%81ginas%20web.jpg'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.form-group {
+  width: 400px;
+  background: #24303c;
+  padding: 12px;
+  margin: auto;
+  margin-top: 7px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 3.5px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+.botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+.boton_registro{
+  width: 50%;
+  background: #1f53c5;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin: auto;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.venta{text-align:center;
+    color:#C82222;
+}
+.centrado { text-align:center;}

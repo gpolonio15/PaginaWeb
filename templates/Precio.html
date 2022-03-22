@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Precio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='precio.css') }}">
+</head>
+<body>
+     <img class="img" src="https://thumbs.dreamstime.com/b/icono-de-l%C3%ADnea-moda-lenta-signo-prueba-ecol%C3%B3gica-s%C3%ADmbolo-comercio-justo-vector-elemento-dise%C3%B1o-calidad-estilo-lineal-trazo-172879614.jpg"
+                        alt="Imagen de la empresa"
+                        width="250"
+                        height="150"
+                        title="Simbolo empresa"
+                        >
+     <div class="tabla">
+         <h1 class="centrado"><b>Cantidad: {{list}} </b></h1>
+         <h1 class="centrado"><b>El precio total (Con descuento): {{lista_de_ventas}} € </b></h1>
+     </div>
+     <form action='/clientecompra' method="POST">
+        <div class="form-group">
+            <input class="controls" name="nombre" type="text" placeholder="Nombre">
+            <input class="controls" name="direccion" type="text" placeholder="Dirección">
+            <input class="controls" name="postal" type="number" placeholder="Código Postal">
+            <input class="controls" name="telefono" type="text" placeholder="Teléfono">
+            <input class="controls" name="mail" type="text" placeholder="e-mail">
+            <input class="botons" name="comprar" type="submit" value="COMPRAR">
+        </div>
+    </form>
+</body>
+</html>

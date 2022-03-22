@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Armario Casual</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <h1 class="principal">Armario casual</h1>
+    <div class="row">
+        <div class="col-md-4 offset-md-4 my-auto">
+            <div class="card">
+                <form action="/cliente">
+                    <button type="submit" class="btn btn-primary btn-block"><!-- btn-block hace que el boton ocupe todo el ancho -->
+                        <a href="/cliente"></a>
+                        Cliente
+                    </button>
+                </form>
+                <form action="/proveedor">
+                    <button type="submit" class="btn btn-primary btn-block"> <!-- btn-block hace que el boton ocupe todo el ancho -->
+                        <a href="/comprador"></a>
+                        Proveedor
+                    </button>
+                </form>
+                <form action="/usuario" method="POST" >
+                    <button type="submit" class="btn btn-primary btn-block"> <!-- btn-block hace que el boton ocupe todo el ancho -->
+                        <a href="/usuario"></a>
+                        Administrador
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <img src="https://1000marcas.net/wp-content/uploads/2020/03/Stone-Island-Logo-1.png"
+     alt="Stone island"
+     width="500"
+     height="341"
+     title="Stone island">
+    <img src="https://www.adhesivosnatos.com/wp-content/uploads/2016/10/the-north-face-logo-pegatina.png"
+     alt="The north face"
+     width="360"
+     height="341"
+     title="The north face">
+    <img src="https://urbancomunicacion.com/wp-content/uploads/2018/03/Lacoste-cambia-su-ic%C3%B3nico-logo-por-una-buena-causa-Urban-comunicacion.png"
+     alt="Lacoste"
+     width="300"
+     height="301"
+     title="Lacoste">
+</body>
+</html>

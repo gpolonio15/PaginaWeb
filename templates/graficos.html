@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gráficos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='graficos.css') }}">
+</head>
+
+<body>
+    <div class="card-header">
+        <h1 class="centrado"><b> <i>Información global empresa</i></b></h1>
+            <form action="/grafica" method="POST" style="text-decoration:none">
+                <img src="/static/Images/new_plot.jpg" alt="Chart" height="400" width="400">
+                <img src="/static/Images/ganancia_plot.png" alt="Chart" height="400" width="400">
+                <img src="/static/Images/grafica_ventas.png" alt="Chart" height="400" width="400">
+            </form>
+
+        <form action="/volver_index">
+            <input class="boton_1" name="registro" type="submit" value="Menu Principal">
+        </form>
+
+    </div>
+
+</body>
+</html>

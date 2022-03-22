@@ -1,0 +1,50 @@
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.form-group {
+  width: 400px;
+  background: white;
+  padding: 10px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: withe;
+  box-shadow: none;
+}
+.controls {
+  width: 100%;
+  background: white;
+  padding: 3.5px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: black;
+}
+.botons {
+  width: 100%;
+  background: #CFA380;
+  border: none;
+  padding: 10px;
+  color: black;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.centrado {
+    text-align:center;
+    color: black;
+
+}
+img{
+display:block;
+margin:auto;
+filter: brightness(1.1);
+mix-blend-mode: multiply;
+}

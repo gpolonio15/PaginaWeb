@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Producto añadido</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='producto_ana.css') }}">
+</head>
+<body>
+    <div class="card-body">
+        <h1 class="centrado"><b>El producto ha sido añadido correctamente</b></h1>
+        <form action="/volver_index">
+            <input class="boton_1" name="registro" type="submit" value="Menú Principal">
+        </form>
+        <form action="/volver_registro">
+            <input class="boton_1" name="index" type="submit" value="Resgistrar un nuevo Producto">
+        </form>
+    </div>
+
+
+</body>
+</html>

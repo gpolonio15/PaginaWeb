@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beneficios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='beneficio.css') }}">
+</head>
+<body>
+    <div class="card-body">
+        <form action="/beneficio" method="GET">
+            {% for venta in lista_de_ventas %}
+                <div class="tabla">
+                    <h5 class="card-title">Cantidad comprada:{{venta.venta}}</h5>
+                    <p class="card-text">Referencia: {{venta.referencia}}</p>
+                    <p class="card-text">Precio Total (Con descuento): {{venta.precio}} €</p>
+                    <h1 class="card-text">Beneficio: {{venta.ganancias}} € </h1>
+                </div>
+            {% endfor %}
+        </form>
+    </div>
+    <form action="/volver_index">
+        <input class="boton_1" name="registro" type="submit" value="Menu Principal">
+    </form>
+</body>
+</html>

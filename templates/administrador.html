@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='administrador.css') }}">
+</head>
+<body>
+    <div class="card-header">
+        <h1 class="centrado"><b> <i>Información global empresa</i></b></h1>
+    </div>
+     <div class="card-body">
+
+     </div>
+    <form action="/grafica" method="GET">
+        <input class="botons" name="grafico-almacen" type="submit" value="Gráfica Productos Almacen">
+    </form>
+    <form action="/beneficio" method="GET">
+        <input class="botons" name="ventas" type="submit" value="Beneficios">
+    </form>
+
+    <div class="card-body">
+        <form action="/login" method="GET">
+            {% for producto in lista_de_adm %}
+                <div class="tabla">
+                    <h5 class="card-title">{{producto.nombreEmpresa}}</h5>
+                    <p class="card-text">Telefono: {{producto.telefono}}</p>
+                    <p class="card-text">Dirección: {{producto.direccion}}</p>
+                    <p class="card-text">CIF: {{producto.cif}}</p>
+                     <p class="card-text">E-mail:{{producto.email}}</p>
+                    <h5 class="card-title">{{producto.marca}}</h5>
+                    <p class="card-text">{{producto.descripcion}}</p>
+                    <p class="card-text">Color: {{producto.color}}</p>
+                    <p class="card-text">Precio: {{producto.precio}}€</p>
+                    <p class="card-text">Cantidad disponible: {{producto.cantidad}} en el almacen</p>
+                    <p class="card-text">Descuento: {{producto.porcentaje_descuento}}%</p>
+                    <p class="card-text">Referencia: {{producto.referencia}}</p>
+
+                </div>
+            {% endfor %}
+        </form>
+        <form action="/eliminar">
+            <input class="boton_registro" name="registrado" type="submit" value="Si desea eliminar algún producto, pulse aqui">
+        </form>
+    </div>
+
+</body>
+</html>

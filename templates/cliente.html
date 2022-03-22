@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cliente</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='cliente.css') }}">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font- awesome.min.css" rel="stylesheet" integrity="sha384- wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+     <h1 class="centrado"><b> <i>Productos disponibles</i></b></h1>
+     <img class="img" src="https://thumbs.dreamstime.com/b/icono-de-l%C3%ADnea-moda-lenta-signo-prueba-ecol%C3%B3gica-s%C3%ADmbolo-comercio-justo-vector-elemento-dise%C3%B1o-calidad-estilo-lineal-trazo-172879614.jpg"
+                        alt="Imagen de la empresa"
+                        width="200"
+                        height="150"
+                        title="Simbolo empresa"
+                        >
+        <form action="/vendido" method="POST">
+                {% for producto in lista_de_productos %}
+                    <div class="tabla">
+                        <h5 class="card-title">{{producto.marca}}</h5>
+                        <h5 class="card-title">Referencia: {{producto.referencia}}</h5>
+                        <p class="card-text">{{producto.descripcion}}</p>
+                        <p class="card-text">Color:{{producto.color}}</p>
+                        <p class="card-text">Precio:{{producto.precio}}€</p>
+                        <p class="card-text">Stock:{{producto.cantidad}}</p>
+                        <p class="card-text">{{producto. porcentaje_descuento}}% de descuento</p>
+                    </div>
+                {% endfor %}
+            <div class="form-group">
+                <input class="controls" name="referencia_4" type="text" placeholder="Introduzca la referencia del producto">
+                <input class="controls" name="venta" type="number" placeholder="Cantidad a comprar">
+                <input class="botons" name="comprar" type="submit" value="comprar">
+            </div>
+        </form>
+</body>
+</html>

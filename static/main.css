@@ -1,0 +1,28 @@
+
+
+.titulo {
+    font-family: 'Permanent Marker', cursive;
+    }
+body{
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.principal {
+   text-align:center;
+   align-items: center;
+    }
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 3.5px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+

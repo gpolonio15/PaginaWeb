@@ -1,0 +1,32 @@
+body{
+    background-image: url('https://www.aicad.es/asset/img/2/bases-de-la-administracion-de-empresas.jpg'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.centrado { text-align:center;
+    margin-top: 40px}
+.tabla { text-align:center;}
+
+ .boton_1{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+   text-decoration: none;
+   padding: 12px;
+   padding-left: 10px;
+   padding-right: 10px;
+   font-family: helvetica;
+   font-weight: 300;
+   font-size: 25px;
+   font-style: italic;
+   color: blue;
+   background-color: #82b085;
+   border-radius: 15px;
+   border: 3px double #006505;
+  }
+  .boton_1:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
+}
