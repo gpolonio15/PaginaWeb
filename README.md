@@ -1,4 +1,4 @@
-# PaginaWeb
+# PaginaWeb sobre ventas con flask y sql
 
  Web de ventas creada con flask.
 
