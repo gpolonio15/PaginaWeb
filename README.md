@@ -1,5 +1,7 @@
 # PaginaWeb
 
+ Web de ventas creada con flask.
+
 Se ha planteado una web (pycharm-flask) con base de datos sql, donde todo tipo de proveedores de ropa pueden vender sus productos, de forma que los propietarios de la página web se quedan con un porcentaje de cada venta.
 
 
